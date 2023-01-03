@@ -1,0 +1,7 @@
+.NewMain {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
