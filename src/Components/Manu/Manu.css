@@ -1,0 +1,6 @@
+.Manu {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(black, green);
+}

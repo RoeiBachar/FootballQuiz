@@ -4,6 +4,14 @@ NewMain {
     align-items: center;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+    
+}
+.NewMain{
+    padding: 44px;
+    font-size: 30px;
+    background-image: linear-gradient(black, green);
+
 }
 
 button {
@@ -11,7 +19,8 @@ button {
     background-color: blue;
     border: 2px solid black;
     padding: 10px 20px;
-    font-size: 16px;
+
+    font-size: 30px;
     
 }
 

@@ -2,12 +2,15 @@ import { useState } from "react";
 import "./NewMain.css";
 import { questions } from "./questions";
 import { IAnswer } from "../../Interfaces/IQuestions";
+import { useParams } from "react-router-dom";
 
 function NewMain(): JSX.Element {
+  const { topic } = useParams();
+  console.log(topic);
+  console.log(questions);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [numCorrectAnswers, setNumCorrectAnswers] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
-
   const handleAnswer = (answer: IAnswer) => {
     setSelectedAnswer(answer.text);
     if (answer.isCorrect) {
@@ -18,9 +21,8 @@ function NewMain(): JSX.Element {
       setSelectedAnswer("");
       clearTimeout(timeout);
     }, 1000);
-
-    // Go to the next question
   };
+
   return (
     <div className="NewMain">
       <div style={{ display: "flex", justifyContent: "center" }}>
@@ -39,7 +41,20 @@ function NewMain(): JSX.Element {
                 flexDirection: "column",
               }}
             >
-              <div>{questions[currentQuestionIndex].question.quest} </div>
+              <div style={{ backgroundColor: "darkblue" }}>
+                <div style={{padding:"6px"}}>
+                  <span style={{ color: "white"}}>
+                    {questions[currentQuestionIndex].question.quest}
+                  </span>
+                </div>
+                <div>
+                  <img
+                    height={530}
+                    width={730}
+                    src={questions[currentQuestionIndex].question.image}
+                  ></img>
+                </div>
+              </div>
               {questions[currentQuestionIndex].answers.map((answer) => (
                 <button
                   onClick={() => handleAnswer(answer)}
@@ -53,8 +68,8 @@ function NewMain(): JSX.Element {
                   }}
                   disabled={selectedAnswer.length > 0}
                 >
-                  <img src={answer.image} width={20} />
-                  {answer.text}
+                  <img src={answer.image} width={50} />
+                  {`  ${answer.text} `}
                 </button>
               ))}
             </div>
