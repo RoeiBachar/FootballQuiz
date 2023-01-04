@@ -2,7 +2,7 @@ export interface IQuiz {
     question: {
         quest: string;
         image: string;
-        
+
     };
     answers: IAnswer[];
     difficulty: number;
@@ -17,7 +17,7 @@ export interface IAnswer {
 
 export interface CardProps {
     image: string;
-    topic: string;
+    topic: number;
 }
 
 

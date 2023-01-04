@@ -2,5 +2,19 @@
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    background-image: linear-gradient(black, green);
+    background-image: url('https://cdn.dribbble.com/users/384270/screenshots/1503082/pumafc_stadium_02_dribbble.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.footer {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    font-size: 40px;
+    background-color:black
 }

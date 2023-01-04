@@ -1,13 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./NewMain.css";
 import { questions } from "./questions";
-import { IAnswer } from "../../Interfaces/IQuestions";
+import { IAnswer, IQuiz } from "../../Interfaces/IQuestions";
 import { useParams } from "react-router-dom";
 
 function NewMain(): JSX.Element {
   const { topic } = useParams();
-  console.log(topic);
-  console.log(questions);
+  useEffect(() => {
+    if (topic) {
+      const difficultLevel = +topic;
+      const que = questions.filter(
+        (item) => item.difficulty === difficultLevel
+      );
+      setDifficultLevel(que);
+    }
+  }, []);
+
+  const [getDifficultLevel, setDifficultLevel] = useState<IQuiz[]>([]);
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [numCorrectAnswers, setNumCorrectAnswers] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
@@ -25,11 +35,13 @@ function NewMain(): JSX.Element {
 
   return (
     <div className="NewMain">
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        {currentQuestionIndex >= questions.length ? (
+      <div
+        style={{ display: "flex", justifyContent: "center", color: "white" }}
+      >
+        {currentQuestionIndex >= getDifficultLevel.length ? (
           <div>
-            You got {numCorrectAnswers} out of {questions.length} questions
-            correct!
+            You got {numCorrectAnswers} out of {getDifficultLevel.length}{" "}
+            questions correct!
           </div>
         ) : (
           <div>
@@ -41,21 +53,24 @@ function NewMain(): JSX.Element {
                 flexDirection: "column",
               }}
             >
-              <div style={{ backgroundColor: "darkblue" }}>
-                <div style={{padding:"6px"}}>
-                  <span style={{ color: "white"}}>
-                    {questions[currentQuestionIndex].question.quest}
+              <div style={{ backgroundColor: "darkblue",padding:"6px"}}>
+                <span>{`${currentQuestionIndex + 1} / ${
+                  getDifficultLevel.length
+                }`}</span>
+                <div style={{ padding: "6px" }}>
+                  <span style={{ color: "white" }}>
+                    {getDifficultLevel[currentQuestionIndex].question.quest}
                   </span>
                 </div>
                 <div>
                   <img
                     height={530}
                     width={730}
-                    src={questions[currentQuestionIndex].question.image}
+                    src={getDifficultLevel[currentQuestionIndex].question.image}
                   ></img>
                 </div>
               </div>
-              {questions[currentQuestionIndex].answers.map((answer) => (
+              {getDifficultLevel[currentQuestionIndex].answers.map((answer) => (
                 <button
                   onClick={() => handleAnswer(answer)}
                   style={{

@@ -25,7 +25,7 @@ function Card(props: CardProps): JSX.Element {
         }}
       >
         <span style={{ backgroundColor: "black", color: "white",borderRadius: "20%",padding:"8px",fontSize:"55px"}}>
-          {props.topic == "1" ? "חובבן" : props.topic == "2" ? "מתקדם" : "מקצוען"}
+          {props.topic == 1 ? "חובבן" : props.topic == 2 ? "מתקדם" : "מקצוען"}
         </span>
       </button>
     </div>
