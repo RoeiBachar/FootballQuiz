@@ -30,7 +30,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -59,7 +58,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -88,7 +86,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 2
     },
     {
         question: {
@@ -117,7 +114,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 3
     },
     {
         question: {
@@ -146,7 +142,6 @@ export const questions: IQuiz[] = [
                 isCorrect: true
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -175,7 +170,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -204,7 +198,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -233,7 +226,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -262,7 +254,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -291,7 +282,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -320,7 +310,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -349,7 +338,6 @@ export const questions: IQuiz[] = [
                 isCorrect: true
             },
         ],
-        difficulty: 1
     },
     {
         question: {
@@ -378,7 +366,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 2
     },
     {
         question: {
@@ -402,12 +389,11 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
             {
-                text:  `מנצ'סטר סיטי`,
+                text: `מנצ'סטר סיטי`,
                 image: '',
                 isCorrect: false
             },
         ],
-        difficulty: 2
     },
     {
         question: {
@@ -436,7 +422,6 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 2
     },
     {
         question: {
@@ -465,153 +450,63 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
         ],
-        difficulty: 2
     },
     {
         question: {
-            quest: "",
-            image: ''
+            quest: "?מי זכתה הכי הרבה בתואר הליברטדורס",
+            image: 'https://cdn.dribbble.com/users/1185927/screenshots/6095084/dribbble_2.gif'
         },
         answers: [
             {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
+                text: `בוקה ג'וניורס`,
                 image: '',
                 isCorrect: true
             },
+            {
+                text: 'ריבר פלייט',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'סנטוס',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'פניארול',
+                image: '',
+                isCorrect: false
+            },
         ],
-        difficulty: 2
     },
     {
         question: {
-            quest: "",
-            image: ''
+            quest: "?כמה כסף קיבלה בארסה עבור ניימאר מפ.ס.ז",
+            image: 'https://media2.giphy.com/media/l41JHrLuTnKWaOmk0/giphy.gif'
         },
         answers: [
             {
-                text: '',
+                text: 'כ-150 מיליון אירו',
                 image: '',
                 isCorrect: false
             },
             {
-                text: '',
+                text: 'כ-190 מיליון אירו',
                 image: '',
                 isCorrect: false
             },
             {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
+                text: 'כ-222 מיליון אירו',
                 image: '',
                 isCorrect: true
             },
-        ],
-        difficulty: 2
-    },
-    {
-        question: {
-            quest: "",
-            image: ''
-        },
-        answers: [
             {
-                text: '',
+                text: 'כ-350 מיליון אירו',
                 image: '',
                 isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: true
             },
         ],
-        difficulty: 2
-    },
-    {
-        question: {
-            quest: "",
-            image: ''
-        },
-        answers: [
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: true
-            },
-        ],
-        difficulty: 2
-    },
-    {
-        question: {
-            quest: "",
-            image: ''
-        },
-        answers: [
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                image: '',
-                isCorrect: true
-            },
-        ],
-        difficulty: 2
-    },
+    }
 ];
 
 

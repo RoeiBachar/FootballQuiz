@@ -9,7 +9,7 @@ function Routing(): JSX.Element {
     <div className="Routing">
       <Routes>
         <Route path="/" element={<Manu />} />
-        <Route path="/:topic" element={<NewMain/>} />
+        <Route path="/NewMain" element={<NewMain/>} />
 
         <Route path="*" element={<Manu />} />
       </Routes>
