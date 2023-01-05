@@ -12,11 +12,13 @@ function NewMain(): JSX.Element {
       const que = questions.filter(
         (item) => item.difficulty === difficultLevel
       );
-      setDifficultLevel(que);
+      setQuestionByDifficulty(que);
     }
   }, []);
 
-  const [getDifficultLevel, setDifficultLevel] = useState<IQuiz[]>([]);
+  const [getQuestionByDifficulty, setQuestionByDifficulty] = useState<IQuiz[]>(
+    []
+  );
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [numCorrectAnswers, setNumCorrectAnswers] = useState(0);
@@ -39,12 +41,31 @@ function NewMain(): JSX.Element {
       <div
         style={{ display: "flex", justifyContent: "center", color: "white" }}
       >
-        {currentQuestionIndex >= getDifficultLevel.length ? (
-          <div style={{textAlign:"center"}}>
-            <span> {numCorrectAnswers>=6 ?"!וואו כל הכבוד":"לא נורא, נסה שוב"}</span><br/>
-           
-          ענית על {numCorrectAnswers} תשובות נכונות מתוך {getDifficultLevel.length}
-          </div>
+        {currentQuestionIndex >= getQuestionByDifficulty.length ? (
+          numCorrectAnswers >= 8 ? (
+            <div className="certificate">
+              <h1>Certificate of Completion</h1>
+              <h2>כל הכבוד</h2>
+              <p style={{ direction: "rtl", fontSize: "70px" }}>
+                ענית על{" "}
+                {`${numCorrectAnswers}/${getQuestionByDifficulty.length}`} שאלות
+                נכון
+                <p style={{ direction: "rtl", fontSize: "40px" }}>
+                  רציתי להודות לך על השתתפותך בחידון הכדורגל, אין ספק שכדורגל זה
+                  הצד החזק שלך!
+                </p>
+                <img width={400} height={400} src="https://media.tenor.com/LfSgwR0jqPgAAAAd/clap-applause.gif"/>
+              </p>
+              <footer>
+                Date:{" "}
+                {`${new Date().getDate()}-${
+                  new Date().getMonth() + 1
+                }-${new Date().getFullYear()}`}
+              </footer>
+            </div>
+          ) : (
+            "לא נורא"
+          )
         ) : (
           <div>
             <div
@@ -57,38 +78,46 @@ function NewMain(): JSX.Element {
             >
               <div style={{ backgroundColor: "darkblue", padding: "6px" }}>
                 <span>{`${currentQuestionIndex + 1} / ${
-                  getDifficultLevel.length
+                  getQuestionByDifficulty.length
                 }`}</span>
                 <div style={{ padding: "6px" }}>
                   <span style={{ color: "white" }}>
-                    {getDifficultLevel[currentQuestionIndex].question.quest}
+                    {
+                      getQuestionByDifficulty[currentQuestionIndex].question
+                        .quest
+                    }
                   </span>
                 </div>
                 <div>
                   <img
                     height={530}
                     width={730}
-                    src={getDifficultLevel[currentQuestionIndex].question.image}
+                    src={
+                      getQuestionByDifficulty[currentQuestionIndex].question
+                        .image
+                    }
                   ></img>
                 </div>
               </div>
-              {getDifficultLevel[currentQuestionIndex].answers.map((answer) => (
-                <button
-                  onClick={() => handleAnswer(answer)}
-                  style={{
-                    backgroundColor:
-                      answer.text === selectedAnswer
-                        ? answer.isCorrect
-                          ? "green"
-                          : "red"
-                        : "",
-                  }}
-                  disabled={selectedAnswer.length > 0}
-                >
-                  <img src={answer.image} width={50} />
-                  {`  ${answer.text} `}
-                </button>
-              ))}
+              {getQuestionByDifficulty[currentQuestionIndex].answers.map(
+                (answer) => (
+                  <button
+                    onClick={() => handleAnswer(answer)}
+                    style={{
+                      backgroundColor:
+                        answer.text === selectedAnswer
+                          ? answer.isCorrect
+                            ? "green"
+                            : "red"
+                          : "",
+                    }}
+                    disabled={selectedAnswer.length > 0}
+                  >
+                    <img src={answer.image} width={50} />
+                    {`  ${answer.text} `}
+                  </button>
+                )
+              )}
             </div>
           </div>
         )}

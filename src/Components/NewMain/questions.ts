@@ -351,6 +351,267 @@ export const questions: IQuiz[] = [
         ],
         difficulty: 1
     },
+    {
+        question: {
+            quest: "?למי יש הכי הרבה שערים בעונה אחת של ליגת האלופות",
+            image: 'https://images.squarespace-cdn.com/content/v1/5649f3d2e4b0c4ad07cab139/1559248401920-0GNDIRU8A9ZXSLG90SYN/CL_Raditik_Anim.gif?format=1500w'
+        },
+        answers: [
+            {
+                text: 'רוד ואן ניסטלרוי',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'ליאו מסי',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'כריסטיאנו רונאלדו',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'רוברט לבנדובסקי',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 2
+    },
+    {
+        question: {
+            quest: "?מי זכתה הכי הרבה בפרמיירליג",
+            image: 'https://broadbridgeprimaryschool.com/wp-content/uploads/2022/01/premier-league-lion.gif'
+        },
+        answers: [
+            {
+                text: `מנצ'סטר יונייטד`,
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'ליברפול',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'ארסנל',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text:  `מנצ'סטר סיטי`,
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 2
+    },
+    {
+        question: {
+            quest: "?מי זכתה הכי הרבה בליגה האיטלקית",
+            image: 'https://media.tenor.com/0BHa4zsQfIwAAAAC/inter-scudetto-inter-serie-a.gif'
+        },
+        answers: [
+            {
+                text: 'יובנטוס',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'נאפולי',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'אינטר',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'מילאן',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 2
+    },
+    {
+        question: {
+            quest: "?למי יש הכי הרבה הופעות עבור מועדון בודד בכדורגל הצרפתי",
+            image: ''
+        },
+        answers: [
+            {
+                text: 'כריס ואדל',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'זינדין זידאן',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'מישל פלאטיני',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'אריק קאנטונה',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 2
+    },
+    {
+        question: {
+            quest: "",
+            image: ''
+        },
+        answers: [
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: true
+            },
+        ],
+        difficulty: 2
+    },
+    {
+        question: {
+            quest: "",
+            image: ''
+        },
+        answers: [
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: true
+            },
+        ],
+        difficulty: 2
+    },
+    {
+        question: {
+            quest: "",
+            image: ''
+        },
+        answers: [
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: true
+            },
+        ],
+        difficulty: 2
+    },
+    {
+        question: {
+            quest: "",
+            image: ''
+        },
+        answers: [
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: true
+            },
+        ],
+        difficulty: 2
+    },
+    {
+        question: {
+            quest: "",
+            image: ''
+        },
+        answers: [
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '',
+                image: '',
+                isCorrect: true
+            },
+        ],
+        difficulty: 2
+    },
 ];
 
 
