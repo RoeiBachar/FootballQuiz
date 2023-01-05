@@ -35,7 +35,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "כמה מחציות יש במשחק של 90 דקות?",
-            image: "https://resources.premierleague.com/photos/2022/08/08/2ab10666-b34d-4b11-9d49-ce5b7924a6cf/Anthony-Taylor-referee.png?width=930&height=620"
+            image: "https://i.gifer.com/7xUf.gif"
         },
         answers: [
             {
@@ -119,6 +119,239 @@ export const questions: IQuiz[] = [
         ],
         difficulty: 3
     },
+    {
+        question: {
+            quest: "?איך קוראים לטורניר הבינלאומי היוקרתי לנבחרות בכדורגל",
+            image: 'https://static.wixstatic.com/media/8f2779_58f66f03a9cd4462ba4c09a9d087486d~mv2.gif'
+        },
+        answers: [
+            {
+                text: 'ליגת האלופות',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'ליגת העל',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'ליגה אירופאית',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'גביע העולם',
+                image: '',
+                isCorrect: true
+            },
+        ],
+        difficulty: 1
+    },
+    {
+        question: {
+            quest: "?כמה שחקנים מאותה קבוצה פותחים את המשחק",
+            image: 'https://media.newyorker.com/photos/5b2279fa87016730a4fd04c0/16:9/w_1200,h_675,c_limit/r32340.gif'
+        },
+        answers: [
+            {
+                text: '11',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: '7',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '8',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: '13',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 1
+    },
+    {
+        question: {
+            quest: "?מהו הגוף המנהל העיקרי של הכדורגל ברחבי העולם",
+            image: 'https://media.newyorker.com/photos/5e44573140daaf00088deb8a/16:9/w_1431,h_805,c_limit/Heller-OpenDemocracy-promo.gif'
+        },
+        answers: [
+            {
+                text: 'FIFA',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'UEFA',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'NFL',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'NBA',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 1
+    },
+    {
+        question: {
+            quest: "?איזה מהבאים אינו עמדה בכדורגל",
+            image: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F09be6733-8b45-4a09-825a-437b6f47ea9a_1166x708.gif'
+        },
+        answers: [
+            {
+                text: 'חלוץ',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'סנטר',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'בלם',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'מגן',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 1
+    },
+    {
+        question: {
+            quest: "?כמה זמן נמשך משחק ליגה רגיל",
+            image: 'https://media.tenor.com/4IEX7eXQKaEAAAAd/soccer-game-time.gif'
+        },
+        answers: [
+            {
+                text: 'כ-90 דקות',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'כ-120 דקות',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'כ- 45 דקות',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'כ-80 דקות',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 1
+    },
+    {
+        question: {
+            quest: "?מי מלך שערי נבחרת ישראל בכל הזמנים",
+            image: 'https://thumbs.gfycat.com/RashTestyAcouchi-max-1mb.gif'
+        },
+        answers: [
+            {
+                text: 'יוסי בניון',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: "'אייל ברקוביץ",
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'ערן זהבי',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'שייע פייגנבוים',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 1
+    },
+    {
+        question: {
+            quest: "?באיזו נבחרת משחק כריסטיאנו רונאלדו",
+            image: 'https://i.kym-cdn.com/photos/images/original/000/781/221/6e1.gif'
+        },
+        answers: [
+            {
+                text: 'ברזיל',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'ספרד',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'פורטוגל',
+                image: '',
+                isCorrect: true
+            },
+            {
+                text: 'פולין',
+                image: '',
+                isCorrect: false
+            },
+        ],
+        difficulty: 1
+    },
+    {
+        question: {
+            quest: "?באיזו נבחרת משחק ניימאר",
+            image: 'https://64.media.tumblr.com/6f40bdf49365858137409a98e9456f27/fbd6aa36972822de-6c/s500x750/cd296b4297e5eb08435d188354745874fd6b4ac3.gifv'
+        },
+        answers: [
+            {
+                text: 'ספרד',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'צרפת',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'ארגנטינה',
+                image: '',
+                isCorrect: false
+            },
+            {
+                text: 'ברזיל',
+                image: '',
+                isCorrect: true
+            },
+        ],
+        difficulty: 1
+    },
 ];
+
 
 

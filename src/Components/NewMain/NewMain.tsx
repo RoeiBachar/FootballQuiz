@@ -22,6 +22,7 @@ function NewMain(): JSX.Element {
   const [numCorrectAnswers, setNumCorrectAnswers] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const handleAnswer = (answer: IAnswer) => {
+    const hara = "";
     setSelectedAnswer(answer.text);
     if (answer.isCorrect) {
       setNumCorrectAnswers(numCorrectAnswers + 1);
@@ -39,9 +40,10 @@ function NewMain(): JSX.Element {
         style={{ display: "flex", justifyContent: "center", color: "white" }}
       >
         {currentQuestionIndex >= getDifficultLevel.length ? (
-          <div>
-            You got {numCorrectAnswers} out of {getDifficultLevel.length}{" "}
-            questions correct!
+          <div style={{textAlign:"center"}}>
+            <span> {numCorrectAnswers>=6 ?"!וואו כל הכבוד":"לא נורא, נסה שוב"}</span><br/>
+           
+          ענית על {numCorrectAnswers} תשובות נכונות מתוך {getDifficultLevel.length}
           </div>
         ) : (
           <div>
@@ -53,7 +55,7 @@ function NewMain(): JSX.Element {
                 flexDirection: "column",
               }}
             >
-              <div style={{ backgroundColor: "darkblue",padding:"6px"}}>
+              <div style={{ backgroundColor: "darkblue", padding: "6px" }}>
                 <span>{`${currentQuestionIndex + 1} / ${
                   getDifficultLevel.length
                 }`}</span>

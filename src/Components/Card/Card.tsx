@@ -10,6 +10,7 @@ function Card(props: CardProps): JSX.Element {
     <div className="Card">
       <button
         className="myCard"
+        
         onClick={() => {
           navigate(`/${props.topic}`);
         }}
@@ -21,10 +22,18 @@ function Card(props: CardProps): JSX.Element {
           objectFit: "cover",
           backgroundImage: `url(${props.image})`,
           opacity: "75%",
-          boxShadow: "inset 3px 2px 1px black"
+          boxShadow: "inset 3px 2px 1px black",
         }}
       >
-        <span style={{ backgroundColor: "black", color: "white",borderRadius: "20%",padding:"8px",fontSize:"55px"}}>
+        <span
+          style={{
+            backgroundColor: "black",
+            color: "white",
+            borderRadius: "20%",
+            padding: "8px",
+            fontSize: "55px",
+          }}
+        >
           {props.topic == 1 ? "חובבן" : props.topic == 2 ? "מתקדם" : "מקצוען"}
         </span>
       </button>
