@@ -14,7 +14,8 @@ export interface IAnswer {
 }
 
 export interface CardProps {
-    image: string;
+    image?: string;
+    caption:string;
 }
 
 

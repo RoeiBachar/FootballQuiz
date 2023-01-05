@@ -33,7 +33,7 @@ function Card(props: CardProps): JSX.Element {
             fontSize: "95px",
           }}
         >
-          START
+          {props.caption}
         </span>
       </button>
     </div>

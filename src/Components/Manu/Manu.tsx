@@ -5,6 +5,7 @@ function Manu(): JSX.Element {
   return (
     <div className="Manu">
       <Card
+        caption="התחל"
         image={
           "https://bsmedia.business-standard.com/_media/bs/img/article/2022-12/19/full/1671410852-4743.jpg"
         }

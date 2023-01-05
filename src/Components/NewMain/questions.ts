@@ -426,7 +426,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?למי יש הכי הרבה הופעות עבור מועדון בודד בכדורגל הצרפתי",
-            image: ''
+            image: 'https://1.bp.blogspot.com/-DcfdEpHkpfk/YgB6YeH9nYI/AAAAAAAA7hw/EzMflcjj4IkWiJPyGosnloazpn09p5qDQCNcBGAsYHQ/s0/Flag_of_France.gif'
         },
         answers: [
             {

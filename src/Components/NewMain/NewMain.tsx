@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./NewMain.css";
 import { questions } from "./questions";
 import { IAnswer, IQuiz } from "../../Interfaces/IQuestions";
+import Card from "../Card/Card";
 
 function NewMain(): JSX.Element {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -49,7 +50,20 @@ function NewMain(): JSX.Element {
               </footer>
             </div>
           ) : (
-            "נסה שוב"
+            <div
+          
+              onClick={() => {
+                setCurrentQuestionIndex(0);
+                setNumCorrectAnswers(0);
+              }}
+            >
+                 
+                
+             <Card
+             image="https://media.tenor.com/8iKMNjcWv08AAAAM/ronaldo-crying.gif"
+             caption="נסה שוב"/>
+              <h1>ענית נכון על {`${numCorrectAnswers}/${questions.length}`}</h1>
+            </div>
           )
         ) : (
           <div>

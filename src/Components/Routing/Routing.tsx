@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Main from "../Main/Main";
 import "./Routing.css";
 import NewMain from "../NewMain/NewMain";
 import Manu from "../Manu/Manu";
