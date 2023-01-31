@@ -9,11 +9,18 @@ NewMain {
 
 }
 
+span {
+    font-size: 2.5vh;
+    user-select: none
+}
+
 .NewMain {
     padding: 44px;
     font-size: 30px;
     background-image: url('https://miro.medium.com/max/1100/1*WwukW_cL3TtVTGcefVpr3w.gif');
-    height: 100vh;
+    height: 130vh;
+    width: auto;
+
 }
 
 button {
@@ -21,8 +28,7 @@ button {
     background-color: blue;
     border: 2px solid black;
     padding: 10px 20px;
-    font-size: 41px;
-
+    font-size: 27px
 }
 
 button:hover {
@@ -31,16 +37,16 @@ button:hover {
 
 .certificate {
     width: 700px;
-    height: 1100px;
+    height: 900px;
     border: 5px solid #333;
     background-color: #fff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     font-family: cursive;
     position: relative;
     overflow: hidden;
-  }
-  
-  .certificate::before {
+}
+
+.certificate::before {
     content: "";
     position: absolute;
     top: 0;
@@ -50,36 +56,73 @@ button:hover {
     background: url("https://mir-s3-cdn-cf.behance.net/projects/404/3fd216143258371.Y3JvcCwyODc2LDIyNTAsMTg1LDA.png") center no-repeat;
     background-size: cover;
     opacity: 0.32;
-  }
-  
-  .certificate h1 {
+}
+
+.certificate h1 {
     text-align: center;
     font-size: 36px;
     margin: 30px 0 10px;
     color: #333;
     text-shadow: 0 1px 0 #fff;
-  }
-  
-  .certificate h2 {
+}
+
+.certificate h2 {
     text-align: center;
     font-size: 24px;
     margin: 0 0 20px;
     color: #333;
-  }
-  
-  .certificate p {
+}
+
+.certificate p {
     font-size: 18px;
     margin: 55px;
     text-align: center;
-    color:#333
-  }
-  
-  .certificate footer {
+    color: #333
+}
+
+.certificate footer {
     position: absolute;
     bottom: 20px;
     right: 20px;
     font-size: 14px;
     color: #333;
-  }
-  
-  
+}
+
+h5 {
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+    font-size: 25px;
+}
+
+.line {
+    height: 10rem;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.lineUp {
+    animation: 5s anim-lineUp ease-out 1;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

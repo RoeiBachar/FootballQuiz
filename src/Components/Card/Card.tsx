@@ -15,9 +15,10 @@ function Card(props: CardProps): JSX.Element {
         }}
         style={{
           borderRadius: "50%",
-          height: "650px",
-          width: "680px",
-          backgroundSize: "cover",
+          height: "50%",
+          width: "100%",
+          backgroundSize:"100% 100%",
+          backgroundRepeat:"no-repeat",
           objectFit: "cover",
           backgroundImage: `url(${props.image})`,
           opacity: "75%",
@@ -30,7 +31,7 @@ function Card(props: CardProps): JSX.Element {
             color: "white",
             borderRadius: "20%",
             padding: "8px",
-            fontSize: "95px",
+            fontSize: "6vh",
           }}
         >
           {props.caption}
