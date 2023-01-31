@@ -52,12 +52,12 @@ function NewMain(): JSX.Element {
 
   return (
     <div className="NewMain">
-      <div id="container" style={{width:"100%"}}>
+      <div id="container" style={{ width: "100%" }}>
         <div
           style={{ display: "flex", justifyContent: "center", color: "white" }}
         >
           {currentQuestionIndex >= questions.length ? (
-            numCorrectAnswers >= 16 ? (
+            numCorrectAnswers >= 25 ? (
               <div className="certificate">
                 <h1>Certificate of Completion</h1>
                 <h2>כל הכבוד</h2>
@@ -121,13 +121,14 @@ function NewMain(): JSX.Element {
                   <span>{`${currentQuestionIndex + 1} / ${
                     questions.length
                   }`}</span>
-                  <div style={{ padding: "6px" }} >
-                    <span style={{ color: "white" }} >
+                  <div style={{ padding: "6px" }}>
+                    <span style={{ color: "white" }}>
                       {questions[currentQuestionIndex].question.quest}
                     </span>
                   </div>
                   <div>
                     <img
+                      draggable="false"
                       height={"450rem"}
                       width={"900rem"}
                       src={questions[currentQuestionIndex].question.image}

@@ -3,367 +3,367 @@ import { IQuiz } from "../../Interfaces/IQuestions";
 
 export const questions: IQuiz[] = [
 
-    //     { question: {
-    //         quest: "?מי זכתה במונדיאל 2002",
-    //         image: "https://thumbs.gfycat.com/NegligibleImpossibleGreatwhiteshark-size_restricted.gif"
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'צרפת',
-    //             isCorrect: false
-    //         }
-    //         ,
-    //         {
-    //             text: 'גרמניה',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ברזיל',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'ישראל',
-    //             image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/150px-Flag_of_Israel.svg.png',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?מי הוא השחקן היחיד שזכה שלוש פעמים בגביע העולם",
-    //         image: "https://i.guim.co.uk/img/media/74fe162839e316597767d91bfb136dfa01ab62fc/0_23_2048_1228/master/2048.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=af21139c0f7d4dce78da379391e07e51"
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'רונאלדו',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'פלה',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'מסי',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'מראדונה',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "באיזו עיר נולד ליאו מסי",
-    //         image: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/de5fa267186889.5b311b25e59a0.gif"
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'רוסאריו, ארגנטינה',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'ליסבון, פורטוגל',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ברצלונה, ספרד',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'בת-ים, ישראל',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?מי כבש את השער המצמק לזכות ברזיל בהפסד 7:1 לגרמניה",
-    //         image: 'https://pyxis.nymag.com/v1/imgs/dfb/e7b/6bea14bedd70501455f7a02c469e04ba87-world-cup-brazil-goal.w710.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'ניימאר',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'קוטיניו',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'אוסקר',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'פפה',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?איך קוראים לטורניר הבינלאומי היוקרתי לנבחרות בכדורגל",
-    //         image: 'https://static.wixstatic.com/media/8f2779_58f66f03a9cd4462ba4c09a9d087486d~mv2.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'ליגת האלופות',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ליגת העל',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ליגה אירופאית',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'גביע העולם',
-    //             isCorrect: true
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: ":טוטנהאם זכתה באליפות האחרונה שלה ב            ",
-    //         image: 'https://media.tenor.com/6cBUW5_GoJEAAAAM/tottenham.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: '2002',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: '1950',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: '1961',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: '2015',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?מהו הגוף המנהל העיקרי של הכדורגל ברחבי העולם",
-    //         image: 'https://media.newyorker.com/photos/5e44573140daaf00088deb8a/16:9/w_1431,h_805,c_limit/Heller-OpenDemocracy-promo.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'FIFA',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'UEFA',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'NFL',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'NBA',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?איזה מהבאים אינו עמדה בכדורגל",
-    //         image: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F09be6733-8b45-4a09-825a-437b6f47ea9a_1166x708.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'חלוץ',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'סנטר',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'בלם',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'מגן',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?כמה זמן נמשך משחק ליגה רגיל",
-    //         image: 'https://media.tenor.com/4IEX7eXQKaEAAAAd/soccer-game-time.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'כ-90 דקות',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'כ-120 דקות',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'כ- 45 דקות',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'כ-80 דקות',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?מי מלך שערי נבחרת ישראל בכל הזמנים",
-    //         image: 'https://thumbs.gfycat.com/RashTestyAcouchi-max-1mb.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'יוסי בניון',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: "'אייל ברקוביץ",
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ערן זהבי',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'שייע פייגנבוים',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?באיזו נבחרת משחק כריסטיאנו רונאלדו",
-    //         image: 'https://i.kym-cdn.com/photos/images/original/000/781/221/6e1.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'ברזיל',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ספרד',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'פורטוגל',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'פולין',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?באיזו נבחרת משחק ניימאר",
-    //         image: 'https://64.media.tumblr.com/6f40bdf49365858137409a98e9456f27/fbd6aa36972822de-6c/s500x750/cd296b4297e5eb08435d188354745874fd6b4ac3.gifv'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'ספרד',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'צרפת',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ארגנטינה',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ברזיל',
-    //             isCorrect: true
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?למי יש הכי הרבה שערים בעונה אחת של ליגת האלופות",
-    //         image: 'https://images.squarespace-cdn.com/content/v1/5649f3d2e4b0c4ad07cab139/1559248401920-0GNDIRU8A9ZXSLG90SYN/CL_Raditik_Anim.gif?format=1500w'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'רוד ואן ניסטלרוי',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ליאו מסי',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'כריסטיאנו רונאלדו',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'רוברט לבנדובסקי',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?מי זכתה הכי הרבה בפרמיירליג",
-    //         image: 'https://broadbridgeprimaryschool.com/wp-content/uploads/2022/01/premier-league-lion.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: `מנצ'סטר יונייטד`,
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'ליברפול',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'ארסנל',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: `מנצ'סטר סיטי`,
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
-    // {
-    //     question: {
-    //         quest: "?מי זכתה הכי הרבה בליגה האיטלקית",
-    //         image: 'https://media.tenor.com/0BHa4zsQfIwAAAAC/inter-scudetto-inter-serie-a.gif'
-    //     },
-    //     answers: [
-    //         {
-    //             text: 'יובנטוס',
-    //             isCorrect: true
-    //         },
-    //         {
-    //             text: 'נאפולי',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'אינטר',
-    //             isCorrect: false
-    //         },
-    //         {
-    //             text: 'מילאן',
-    //             isCorrect: false
-    //         },
-    //     ],
-    // },
+        { question: {
+            quest: "?מי זכתה במונדיאל 2002",
+            image: "https://thumbs.gfycat.com/NegligibleImpossibleGreatwhiteshark-size_restricted.gif"
+        },
+        answers: [
+            {
+                text: 'צרפת',
+                isCorrect: false
+            }
+            ,
+            {
+                text: 'גרמניה',
+                isCorrect: false
+            },
+            {
+                text: 'ברזיל',
+                isCorrect: true
+            },
+            {
+                text: 'ישראל',
+                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/150px-Flag_of_Israel.svg.png',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?מי הוא השחקן היחיד שזכה שלוש פעמים בגביע העולם",
+            image: "https://i.guim.co.uk/img/media/74fe162839e316597767d91bfb136dfa01ab62fc/0_23_2048_1228/master/2048.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=af21139c0f7d4dce78da379391e07e51"
+        },
+        answers: [
+            {
+                text: 'רונאלדו',
+                isCorrect: false
+            },
+            {
+                text: 'פלה',
+                isCorrect: true
+            },
+            {
+                text: 'מסי',
+                isCorrect: false
+            },
+            {
+                text: 'מראדונה',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "באיזו עיר נולד ליאו מסי",
+            image: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/de5fa267186889.5b311b25e59a0.gif"
+        },
+        answers: [
+            {
+                text: 'רוסאריו, ארגנטינה',
+                isCorrect: true
+            },
+            {
+                text: 'ליסבון, פורטוגל',
+                isCorrect: false
+            },
+            {
+                text: 'ברצלונה, ספרד',
+                isCorrect: false
+            },
+            {
+                text: 'בת-ים, ישראל',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?מי כבש את השער המצמק לזכות ברזיל בהפסד 7:1 לגרמניה",
+            image: 'https://pyxis.nymag.com/v1/imgs/dfb/e7b/6bea14bedd70501455f7a02c469e04ba87-world-cup-brazil-goal.w710.gif'
+        },
+        answers: [
+            {
+                text: 'ניימאר',
+                isCorrect: false
+            },
+            {
+                text: 'קוטיניו',
+                isCorrect: false
+            },
+            {
+                text: 'אוסקר',
+                isCorrect: true
+            },
+            {
+                text: 'פפה',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?איך קוראים לטורניר הבינלאומי היוקרתי לנבחרות בכדורגל",
+            image: 'https://static.wixstatic.com/media/8f2779_58f66f03a9cd4462ba4c09a9d087486d~mv2.gif'
+        },
+        answers: [
+            {
+                text: 'ליגת האלופות',
+                isCorrect: false
+            },
+            {
+                text: 'ליגת העל',
+                isCorrect: false
+            },
+            {
+                text: 'ליגה אירופאית',
+                isCorrect: false
+            },
+            {
+                text: 'גביע העולם',
+                isCorrect: true
+            },
+        ],
+    },
+    {
+        question: {
+            quest: ":טוטנהאם זכתה באליפות האחרונה שלה ב            ",
+            image: 'https://media.tenor.com/6cBUW5_GoJEAAAAM/tottenham.gif'
+        },
+        answers: [
+            {
+                text: '2002',
+                isCorrect: false
+            },
+            {
+                text: '1950',
+                isCorrect: false
+            },
+            {
+                text: '1961',
+                isCorrect: true
+            },
+            {
+                text: '2015',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?מהו הגוף המנהל העיקרי של הכדורגל ברחבי העולם",
+            image: 'https://media.newyorker.com/photos/5e44573140daaf00088deb8a/16:9/w_1431,h_805,c_limit/Heller-OpenDemocracy-promo.gif'
+        },
+        answers: [
+            {
+                text: 'FIFA',
+                isCorrect: true
+            },
+            {
+                text: 'UEFA',
+                isCorrect: false
+            },
+            {
+                text: 'NFL',
+                isCorrect: false
+            },
+            {
+                text: 'NBA',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?איזה מהבאים אינו עמדה בכדורגל",
+            image: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F09be6733-8b45-4a09-825a-437b6f47ea9a_1166x708.gif'
+        },
+        answers: [
+            {
+                text: 'חלוץ',
+                isCorrect: false
+            },
+            {
+                text: 'סנטר',
+                isCorrect: true
+            },
+            {
+                text: 'בלם',
+                isCorrect: false
+            },
+            {
+                text: 'מגן',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?כמה זמן נמשך משחק ליגה רגיל",
+            image: 'https://media.tenor.com/4IEX7eXQKaEAAAAd/soccer-game-time.gif'
+        },
+        answers: [
+            {
+                text: 'כ-90 דקות',
+                isCorrect: true
+            },
+            {
+                text: 'כ-120 דקות',
+                isCorrect: false
+            },
+            {
+                text: 'כ- 45 דקות',
+                isCorrect: false
+            },
+            {
+                text: 'כ-80 דקות',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?מי מלך שערי נבחרת ישראל בכל הזמנים",
+            image: 'https://thumbs.gfycat.com/RashTestyAcouchi-max-1mb.gif'
+        },
+        answers: [
+            {
+                text: 'יוסי בניון',
+                isCorrect: false
+            },
+            {
+                text: "'אייל ברקוביץ",
+                isCorrect: false
+            },
+            {
+                text: 'ערן זהבי',
+                isCorrect: true
+            },
+            {
+                text: 'שייע פייגנבוים',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?באיזו נבחרת משחק כריסטיאנו רונאלדו",
+            image: 'https://i.kym-cdn.com/photos/images/original/000/781/221/6e1.gif'
+        },
+        answers: [
+            {
+                text: 'ברזיל',
+                isCorrect: false
+            },
+            {
+                text: 'ספרד',
+                isCorrect: false
+            },
+            {
+                text: 'פורטוגל',
+                isCorrect: true
+            },
+            {
+                text: 'פולין',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?באיזו נבחרת משחק ניימאר",
+            image: 'https://64.media.tumblr.com/6f40bdf49365858137409a98e9456f27/fbd6aa36972822de-6c/s500x750/cd296b4297e5eb08435d188354745874fd6b4ac3.gifv'
+        },
+        answers: [
+            {
+                text: 'ספרד',
+                isCorrect: false
+            },
+            {
+                text: 'צרפת',
+                isCorrect: false
+            },
+            {
+                text: 'ארגנטינה',
+                isCorrect: false
+            },
+            {
+                text: 'ברזיל',
+                isCorrect: true
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?למי יש הכי הרבה שערים בעונה אחת של ליגת האלופות",
+            image: 'https://images.squarespace-cdn.com/content/v1/5649f3d2e4b0c4ad07cab139/1559248401920-0GNDIRU8A9ZXSLG90SYN/CL_Raditik_Anim.gif?format=1500w'
+        },
+        answers: [
+            {
+                text: 'רוד ואן ניסטלרוי',
+                isCorrect: false
+            },
+            {
+                text: 'ליאו מסי',
+                isCorrect: false
+            },
+            {
+                text: 'כריסטיאנו רונאלדו',
+                isCorrect: true
+            },
+            {
+                text: 'רוברט לבנדובסקי',
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?מי זכתה הכי הרבה בפרמיירליג",
+            image: 'https://broadbridgeprimaryschool.com/wp-content/uploads/2022/01/premier-league-lion.gif'
+        },
+        answers: [
+            {
+                text: `מנצ'סטר יונייטד`,
+                isCorrect: true
+            },
+            {
+                text: 'ליברפול',
+                isCorrect: false
+            },
+            {
+                text: 'ארסנל',
+                isCorrect: false
+            },
+            {
+                text: `מנצ'סטר סיטי`,
+                isCorrect: false
+            },
+        ],
+    },
+    {
+        question: {
+            quest: "?מי זכתה הכי הרבה בליגה האיטלקית",
+            image: 'https://media.tenor.com/0BHa4zsQfIwAAAAC/inter-scudetto-inter-serie-a.gif'
+        },
+        answers: [
+            {
+                text: 'יובנטוס',
+                isCorrect: true
+            },
+            {
+                text: 'נאפולי',
+                isCorrect: false
+            },
+            {
+                text: 'אינטר',
+                isCorrect: false
+            },
+            {
+                text: 'מילאן',
+                isCorrect: false
+            },
+        ],
+    },
     {
         question: {
             quest: ":שער הסלאלום של אלי אוחנה נגד אוסטרליה היה ב",
@@ -534,120 +534,120 @@ export const questions: IQuiz[] = [
     },
     {
         question: {
-            quest: "",
-            image: ''
+            quest: "?מי הראשון שזכה בכדור הזהב",
+            image: 'https://i.pinimg.com/originals/42/50/27/425027d824305fd320f251578020d93e.gif'
         },
         answers: [
             {
-                text: '',
+                text: 'מסי',
                 isCorrect: false
             },
             {
-                text: '',
-                isCorrect: false
-            },
-            {
-                text: '',
+                text: 'סטנלי מתאוס',
                 isCorrect: true
             },
             {
-                text: '',
+                text: 'אלפרדו די סטפאנו',
+                isCorrect: false
+            },
+            {
+                text: 'פלה',
                 isCorrect: false
             },
         ],
     },
     {
         question: {
-            quest: "",
-            image: ''
+            quest: ":השוער ממוצא אירופאי עם כמות השערים הגבוהה ביותר בהיסטוריה הוא",
+            image: 'https://static.dw.com/image/53518754_605.jpg'
         },
         answers: [
             {
-                text: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                isCorrect: false
-            },
-            {
-                text: '',
+                text: 'דימיטר איבנבקוב',
                 isCorrect: true
             },
             {
-                text: '',
+                text: 'פיטר שמייכל',
+                isCorrect: false
+            },
+            {
+                text: 'אנטה ווליץ',
+                isCorrect: false
+            },
+            {
+                text: 'מנואל נויר',
                 isCorrect: false
             },
         ],
     },
     {
         question: {
-            quest: "",
-            image: ''
+            quest: ":הכדורגלן היחיד להבקיע 5 שערים במשחק במונדיאל הוא",
+            image: 'https://pbs.twimg.com/media/EFFampRWsAE3u67.jpg'
         },
         answers: [
             {
-                text: '',
+                text: 'אוזביו',
                 isCorrect: false
             },
             {
-                text: '',
+                text: 'לבנדובסקי',
                 isCorrect: false
             },
             {
-                text: '',
+                text: 'אולג סלאנקו',
                 isCorrect: true
             },
             {
-                text: '',
+                text: 'אדמיר',
                 isCorrect: false
             },
         ],
     },
     {
         question: {
-            quest: "",
-            image: ''
+            quest: "?מי הילד בתמונה",
+            image: 'https://www.si.com/.image/t_share/MTkwMTY5ODY3NjQ1NjI2MDE0/erling-haaland-pictured-as-a-young-child-dressed-in-manchester-city-kit.jpg'
         },
         answers: [
             {
-                text: '',
+                text: 'דה בריינה',
                 isCorrect: false
             },
             {
-                text: '',
+                text: 'מרקו רויס',
                 isCorrect: false
             },
             {
-                text: '',
+                text: 'ארלינג האלנד',
                 isCorrect: true
             },
             {
-                text: '',
+                text: 'טוטו תמוז',
                 isCorrect: false
             },
         ],
     },
     {
         question: {
-            quest: "",
-            image: ''
+            quest: "?אילו מספרי חולצות נשמרו במילאן ולא יעשה בהם שימוש יותר כאות כבוד לשחקנים שלבשו אותם",
+            image: 'https://pbs.twimg.com/media/EVZ9k_kWoAEH1aW?format=jpg&name=small'
         },
         answers: [
             {
-                text: '',
-                isCorrect: false
-            },
-            {
-                text: '',
-                isCorrect: false
-            },
-            {
-                text: '',
+                text: '3,6',
                 isCorrect: true
             },
             {
-                text: '',
+                text: '6,8',
+                isCorrect: false
+            },
+            {
+                text: '8,10',
+                isCorrect: false
+            },
+            {
+                text: '49,64',
                 isCorrect: false
             },
         ],
