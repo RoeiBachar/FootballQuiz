@@ -1,11 +1,44 @@
 import { IQuiz } from "../../Interfaces/IQuestions";
+import image1 from '../../Images/NegligibleImpossibleGreatwhiteshark-size_restricted.gif';
+import image2 from '../../Images/2048.webp';
+import image3 from '../../Images/de5fa267186889.5b311b25e59a0.gif';
+import image4 from '../../Images/6bea14bedd70501455f7a02c469e04ba87-world-cup-brazil-goal.w710.gif';
+import image5 from '../../Images/8f2779_58f66f03a9cd4462ba4c09a9d087486d_mv2.gif';
+import image6 from '../../Images/tottenham.gif';
+import image7 from '../../Images/Heller-OpenDemocracy-promo.gif';
+import image8 from '../../Images/https___bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com_public_images_09be6733-8b45-4a09-825a-437b6f47ea9a_1166x708.gif';
+import image9 from '../../Images/soccer-game-time.gif';
+import image10 from '../../Images/RashTestyAcouchi-max-1mb.gif';
+import image11 from '../../Images/6e1.gif';
+import image12 from '../../Images/tumblr_6f40bdf49365858137409a98e9456f27_cd296b42_500.webp';
+import image13 from '../../Images/CL_Raditik_Anim.gif';
+import image14 from '../../Images/premier-league-lion.gif';
+import image15 from '../../Images/inter-scudetto-inter-serie-a.gif';
+import image16 from '../../Images/st6awunw8z28rst7amyp.webp';
+import image17 from '../../Images/858510292.gif';
+import image18 from '../../Images/jcrldcsl2fyw0ile6v4b.webp';
+import image19 from '../../Images/GIF-Precedente-InterMilan-Foto.gif';
+import image20 from '../../Images/fit-roses-color-69bbf64ac0494d248eb46122eefde5e1.gif';
+import image21 from '../../Images/oeewoicyfabq9byboino.jpg';
+import image22 from '../../Images/01--DSC05181-Mestalla-Valencia-CF-2015-www.for91days.com1.jpg';
+import image23 from '../../Images/425027d824305fd320f251578020d93e.gif';
+import image24 from '../../Images/53518754_605.jpg';
+import image25 from '../../Images/EFFampRWsAE3u67.jpg';
+import image26 from '../../Images/erling-haaland-pictured-as-a-young-child-dressed-in-manchester-city-kit.jpg';
+import image27 from '../../Images/EVZ9k_kWoAEH1aW.jpg';
+import image28 from '../../Images/Flag_of_France.gif';
+import image29 from '../../Images/dribbble_2.gif';
+import image30 from '../../Images/maxresdefault.jpg';
+
+
 
 
 export const questions: IQuiz[] = [
 
-        { question: {
+    {
+        question: {
             quest: "?מי זכתה במונדיאל 2002",
-            image: "https://thumbs.gfycat.com/NegligibleImpossibleGreatwhiteshark-size_restricted.gif"
+            image: image1
         },
         answers: [
             {
@@ -23,7 +56,6 @@ export const questions: IQuiz[] = [
             },
             {
                 text: 'ישראל',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/150px-Flag_of_Israel.svg.png',
                 isCorrect: false
             },
         ],
@@ -31,7 +63,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי הוא השחקן היחיד שזכה שלוש פעמים בגביע העולם",
-            image: "https://i.guim.co.uk/img/media/74fe162839e316597767d91bfb136dfa01ab62fc/0_23_2048_1228/master/2048.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=af21139c0f7d4dce78da379391e07e51"
+            image: image2
         },
         answers: [
             {
@@ -55,7 +87,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "באיזו עיר נולד ליאו מסי",
-            image: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/de5fa267186889.5b311b25e59a0.gif"
+            image: image3
         },
         answers: [
             {
@@ -79,7 +111,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי כבש את השער המצמק לזכות ברזיל בהפסד 7:1 לגרמניה",
-            image: 'https://pyxis.nymag.com/v1/imgs/dfb/e7b/6bea14bedd70501455f7a02c469e04ba87-world-cup-brazil-goal.w710.gif'
+            image: image4
         },
         answers: [
             {
@@ -103,7 +135,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?איך קוראים לטורניר הבינלאומי היוקרתי לנבחרות בכדורגל",
-            image: 'https://static.wixstatic.com/media/8f2779_58f66f03a9cd4462ba4c09a9d087486d~mv2.gif'
+            image: image5
         },
         answers: [
             {
@@ -127,7 +159,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: ":טוטנהאם זכתה באליפות האחרונה שלה ב            ",
-            image: 'https://media.tenor.com/6cBUW5_GoJEAAAAM/tottenham.gif'
+            image: image6
         },
         answers: [
             {
@@ -151,7 +183,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מהו הגוף המנהל העיקרי של הכדורגל ברחבי העולם",
-            image: 'https://media.newyorker.com/photos/5e44573140daaf00088deb8a/16:9/w_1431,h_805,c_limit/Heller-OpenDemocracy-promo.gif'
+            image: image7
         },
         answers: [
             {
@@ -175,7 +207,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?איזה מהבאים אינו עמדה בכדורגל",
-            image: 'https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F09be6733-8b45-4a09-825a-437b6f47ea9a_1166x708.gif'
+            image: image8
         },
         answers: [
             {
@@ -199,7 +231,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?כמה זמן נמשך משחק ליגה רגיל",
-            image: 'https://media.tenor.com/4IEX7eXQKaEAAAAd/soccer-game-time.gif'
+            image: image9
         },
         answers: [
             {
@@ -223,7 +255,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי מלך שערי נבחרת ישראל בכל הזמנים",
-            image: 'https://thumbs.gfycat.com/RashTestyAcouchi-max-1mb.gif'
+            image: image10
         },
         answers: [
             {
@@ -247,7 +279,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?באיזו נבחרת משחק כריסטיאנו רונאלדו",
-            image: 'https://i.kym-cdn.com/photos/images/original/000/781/221/6e1.gif'
+            image: image11
         },
         answers: [
             {
@@ -271,7 +303,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?באיזו נבחרת משחק ניימאר",
-            image: 'https://64.media.tumblr.com/6f40bdf49365858137409a98e9456f27/fbd6aa36972822de-6c/s500x750/cd296b4297e5eb08435d188354745874fd6b4ac3.gifv'
+            image: image12
         },
         answers: [
             {
@@ -295,7 +327,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?למי יש הכי הרבה שערים בעונה אחת של ליגת האלופות",
-            image: 'https://images.squarespace-cdn.com/content/v1/5649f3d2e4b0c4ad07cab139/1559248401920-0GNDIRU8A9ZXSLG90SYN/CL_Raditik_Anim.gif?format=1500w'
+            image: image13
         },
         answers: [
             {
@@ -319,7 +351,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי זכתה הכי הרבה בפרמיירליג",
-            image: 'https://broadbridgeprimaryschool.com/wp-content/uploads/2022/01/premier-league-lion.gif'
+            image: image14
         },
         answers: [
             {
@@ -343,7 +375,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי זכתה הכי הרבה בליגה האיטלקית",
-            image: 'https://media.tenor.com/0BHa4zsQfIwAAAAC/inter-scudetto-inter-serie-a.gif'
+            image: image15
         },
         answers: [
             {
@@ -367,7 +399,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: ":שער הסלאלום של אלי אוחנה נגד אוסטרליה היה ב",
-            image: 'https://img.ex.co/image/upload/ar_1.5,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit,dpr_1.5/v1601133686/st6awunw8z28rst7amyp.png'
+            image: image16
         },
         answers: [
             {
@@ -391,7 +423,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי שיאן ההופעות של נבחרת קולומביה",
-            image: 'http://nesn.com/wp-content/uploads/2014/06/858510292.gif'
+            image: image17
         },
         answers: [
             {
@@ -415,7 +447,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: ":המשחקים האחרונים של הפועל חיפה באירופה היו נגד",
-            image: 'https://img.ex.co/image/upload/ar_1.5,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit,dpr_1.5/v1601138991/jcrldcsl2fyw0ile6v4b.png'
+            image: image18
         },
         answers: [
             {
@@ -439,7 +471,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?כיצד נקרא המפגש בין מילאן לאינטר",
-            image: 'https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/f1edffc0-4fc2-4477-a3dd-449bd0efb866/GIF-Precedente-InterMilan-Foto.gif'
+            image: image19
         },
         answers: [
             {
@@ -463,7 +495,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?'איזה סוג של דרבי מכונה 'מלחמות השושנים",
-            image: 'https://www.realsimple.com/thmb/J28u4eZ7tBSkXyL25mLzTcfcRA8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fit-roses-color-69bbf64ac0494d248eb46122eefde5e1.gif'
+            image: image20
         },
         answers: [
             {
@@ -487,7 +519,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?כיצד נקרא האיצטדיון של ולנסיה",
-            image: 'https://img.ex.co/image/upload/ar_1.5,c_crop/q_auto:good,f_auto,fl_lossy,w_640,c_limit,dpr_1.5/v1601145968/oeewoicyfabq9byboino.jpg'
+            image: image21
         },
         answers: [
             {
@@ -511,7 +543,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: ":במשך רבע מאה היה המסטאייה קרוי 'איצטדיון לואיס קזאנובה'. הוא הוחזר לשמו המקורי כי",
-            image: 'https://valencia.for91days.com/wp-content/uploads/sites/18/2017/04/01--DSC05181-Mestalla-Valencia-CF-2015-www.for91days.com1.jpg'
+            image: image22
         },
         answers: [
             {
@@ -535,7 +567,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי הראשון שזכה בכדור הזהב",
-            image: 'https://i.pinimg.com/originals/42/50/27/425027d824305fd320f251578020d93e.gif'
+            image: image23
         },
         answers: [
             {
@@ -559,7 +591,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: ":השוער ממוצא אירופאי עם כמות השערים הגבוהה ביותר בהיסטוריה הוא",
-            image: 'https://static.dw.com/image/53518754_605.jpg'
+            image: image24
         },
         answers: [
             {
@@ -583,7 +615,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: ":הכדורגלן היחיד להבקיע 5 שערים במשחק במונדיאל הוא",
-            image: 'https://pbs.twimg.com/media/EFFampRWsAE3u67.jpg'
+            image: image25
         },
         answers: [
             {
@@ -607,7 +639,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי הילד בתמונה",
-            image: 'https://www.si.com/.image/t_share/MTkwMTY5ODY3NjQ1NjI2MDE0/erling-haaland-pictured-as-a-young-child-dressed-in-manchester-city-kit.jpg'
+            image: image26
         },
         answers: [
             {
@@ -631,7 +663,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?אילו מספרי חולצות נשמרו במילאן ולא יעשה בהם שימוש יותר כאות כבוד לשחקנים שלבשו אותם",
-            image: 'https://pbs.twimg.com/media/EVZ9k_kWoAEH1aW?format=jpg&name=small'
+            image: image27
         },
         answers: [
             {
@@ -643,7 +675,7 @@ export const questions: IQuiz[] = [
                 isCorrect: false
             },
             {
-                text: '8,10',
+                text: '8,3',
                 isCorrect: false
             },
             {
@@ -655,7 +687,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?למי יש הכי הרבה הופעות עבור מועדון בודד בכדורגל הצרפתי",
-            image: 'https://1.bp.blogspot.com/-DcfdEpHkpfk/YgB6YeH9nYI/AAAAAAAA7hw/EzMflcjj4IkWiJPyGosnloazpn09p5qDQCNcBGAsYHQ/s0/Flag_of_France.gif'
+            image: image28
         },
         answers: [
             {
@@ -679,7 +711,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?מי זכתה הכי הרבה בתואר הליברטדורס",
-            image: 'https://cdn.dribbble.com/users/1185927/screenshots/6095084/dribbble_2.gif'
+            image: image29
         },
         answers: [
             {
@@ -703,7 +735,7 @@ export const questions: IQuiz[] = [
     {
         question: {
             quest: "?כמה כסף קיבלה בארסה עבור ניימאר מפ.ס.ז",
-            image: 'https://media2.giphy.com/media/l41JHrLuTnKWaOmk0/giphy.gif'
+            image: image30
         },
         answers: [
             {
