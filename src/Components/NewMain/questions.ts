@@ -134,13 +134,6 @@ export const questions: IQuiz[] = [
     },
     
 
-
-
-
-
-
-
-
     {
         question: {
             quest: "?איך קוראים לטורניר הבינלאומי היוקרתי לנבחרות בכדורגל",

@@ -1,15 +1,15 @@
 .Manu {
     height: 100vh;
-    width:100%;
+    width: 100%;
     display: flex;
     background-image: url('https://cdn.dribbble.com/users/384270/screenshots/1503082/pumafc_stadium_02_dribbble.gif');
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-
-}
-
-.footer {
+    
+  }
+  
+  .footer {
     text-align: center;
     font-size: 16px;
     color: #777;
@@ -17,17 +17,34 @@
     bottom: 0;
     width: 20%;
     font-size: 40px;
-    background-color:black
-}
-@media screen and (max-width: 600px) {
-    .footer {
-        font-size: 20px;
+    background-color: black;
+  }
+  
+  /* Responsive CSS */
+  
+  @media screen and (max-width: 768px) {
+    .Manu {
+      flex-direction: column;
+      height: auto;
     }
-}
-
-@media screen and (min-width: 600px) {
+  
     .footer {
-        font-size: 30px;
+      width: 100%;
+      font-size: 24px;
     }
-}
-
+  }
+  
+  @media screen and (max-width: 480px) {
+ .Manu {
+      flex-direction: column;
+      height: 100vh;
+      
+    }
+   
+  
+    .footer {
+      width: 100%;
+      font-size: 24px;
+    }
+  }
+  

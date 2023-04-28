@@ -13,16 +13,11 @@ function Card(props: CardProps): JSX.Element {
         onClick={() => {
           navigate("/NewMain");
         }}
+        id="cardButton"
         style={{
-          borderRadius: "50%",
-          height: "50%",
-          width: "100%",
-          backgroundSize:"100% 100%",
-          backgroundRepeat:"no-repeat",
-          objectFit: "cover",
+         
           backgroundImage: `url(${props.image})`,
-          opacity: "75%",
-          boxShadow: "inset 3px 2px 1px black",
+         
         }}
       >
         <span

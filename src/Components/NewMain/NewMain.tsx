@@ -41,8 +41,6 @@ function NewMain(): JSX.Element {
       setMyMessage(
         `
             התשובה הנכונה היא 
-            
-
             ${bdika[0].text}
             `
       );
@@ -57,7 +55,7 @@ function NewMain(): JSX.Element {
           style={{ display: "flex", justifyContent: "center", color: "white" }}
         >
           {currentQuestionIndex >= questions.length ? (
-            numCorrectAnswers >= 25 ? (
+            numCorrectAnswers >= 1 ? (
               <div className="certificate">
                 <h1>Certificate of Completion</h1>
                 <h2>כל הכבוד</h2>
@@ -69,8 +67,8 @@ function NewMain(): JSX.Element {
                     זה הצד החזק שלך!
                   </p>
                   <img
-                    width={400}
-                    height={400}
+                    width={200}
+                    height={200}
                     src="https://media.tenor.com/LfSgwR0jqPgAAAAd/clap-applause.gif"
                   />
                 </p>
@@ -83,7 +81,7 @@ function NewMain(): JSX.Element {
               </div>
             ) : (
               <div
-                style={{ width: "50%", height: "25rem" }}
+                style={{ width: "90vh", height: "60vh" }}
                 onClick={() => {
                   setCurrentQuestionIndex(0);
                   setNumCorrectAnswers(0);
@@ -109,13 +107,9 @@ function NewMain(): JSX.Element {
                 }}
               >
                 <div
+                    id="blueContainer"
                   style={{
-                    backgroundColor: "darkblue",
-                    padding: "6px",
-                    margin: "0,auto",
-                    width: "70rem",
-                    height: "35rem",
-                    overflow: "hidden",
+                    
                   }}
                 >
                   <span>{`${currentQuestionIndex + 1} / ${
@@ -129,14 +123,14 @@ function NewMain(): JSX.Element {
                   <div>
                     <img
                       draggable="false"
-                      height={"450rem"}
-                      width={"900rem"}
+                      id="questionImage"
                       src={questions[currentQuestionIndex].question.image}
                     />
                   </div>
                 </div>
                 {questions[currentQuestionIndex].answers.map((answer) => (
                   <button
+                    id="answersButton"
                     onClick={() => {
                       handleAnswer(answer);
                       getMessage(answer);
