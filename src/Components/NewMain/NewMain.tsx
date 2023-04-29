@@ -55,7 +55,7 @@ function NewMain(): JSX.Element {
           style={{ display: "flex", justifyContent: "center", color: "white" }}
         >
           {currentQuestionIndex >= questions.length ? (
-            numCorrectAnswers >= 1 ? (
+            numCorrectAnswers >= 25 ? (
               <div className="certificate">
                 <h1>Certificate of Completion</h1>
                 <h2>כל הכבוד</h2>
@@ -108,9 +108,7 @@ function NewMain(): JSX.Element {
               >
                 <div
                     id="blueContainer"
-                  style={{
-                    
-                  }}
+                 
                 >
                   <span>{`${currentQuestionIndex + 1} / ${
                     questions.length
