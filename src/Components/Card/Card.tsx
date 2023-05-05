@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import { CardProps } from "../../Interfaces/IQuestions";
-import NewMain from "../NewMain/NewMain";
 import "./Card.css";
 
 function Card(props: CardProps): JSX.Element {
   const navigate = useNavigate();
 
   return (
-    <div className="Card">
+    <>
       <button
         className="myCard"
         onClick={() => {
@@ -20,7 +19,9 @@ function Card(props: CardProps): JSX.Element {
       >
         <span>{props.caption}</span>
       </button>
-    </div>
+      <div className="Card">
+      </div>
+    </>
   );
 }
 

@@ -49,111 +49,115 @@ function NewMain(): JSX.Element {
   };
 
   return (
-    <div className="NewMain">
-      <div id="container" style={{ width: "100%" }}>
-        <div
-          style={{ display: "flex", justifyContent: "center", color: "white" }}
-        >
-          {currentQuestionIndex >= questions.length ? (
-            numCorrectAnswers >= 25 ? (
-              <div className="certificate">
-                <h1>Certificate of Completion</h1>
-                <h2>כל הכבוד</h2>
-                <p style={{ direction: "rtl", fontSize: "70px" }}>
-                  ענית על {`${numCorrectAnswers}/${questions.length}`} שאלות
-                  נכון
-                  <p style={{ direction: "rtl", fontSize: "40px" }}>
-                    רציתי להודות לך על השתתפותך בחידון הכדורגל, אין ספק שכדורגל
-                    זה הצד החזק שלך!
-                  </p>
-                  <img
-                    width={200}
-                    height={200}
-                    src="https://media.tenor.com/LfSgwR0jqPgAAAAd/clap-applause.gif"
-                  />
+    <div className="NewMain" >
+      <div id="container">
+        {currentQuestionIndex >= questions.length ? (
+          numCorrectAnswers >= 27 ? (
+            <div className="certificate">
+              <h1>Certificate of Completion</h1>
+              <h2>כל הכבוד</h2>
+              <p style={{ direction: "rtl", fontSize: "70px" }}>
+                ענית על {`${numCorrectAnswers}/${questions.length}`} שאלות
+                נכון
+                <p style={{ direction: "rtl", fontSize: "40px" }}>
+                  רציתי להודות לך על השתתפותך בחידון הכדורגל, אין ספק שכדורגל
+                  זה הצד החזק שלך!
                 </p>
-                <footer>
-                  Date:{" "}
-                  {`${new Date().getDate()}-${
-                    new Date().getMonth() + 1
-                  }-${new Date().getFullYear()}`}
-                </footer>
-              </div>
-            ) : (
-              <div
-                style={{ width: "90vh", height: "60vh" }}
-                onClick={() => {
-                  setCurrentQuestionIndex(0);
-                  setNumCorrectAnswers(0);
-                }}
-              >
-                <Card
-                  image="https://media.tenor.com/8iKMNjcWv08AAAAM/ronaldo-crying.gif"
-                  caption="נסה שוב"
+                <img
+                  width={200}
+                  height={200}
+                  src="https://media.tenor.com/LfSgwR0jqPgAAAAd/clap-applause.gif"
                 />
-                <h1 style={{ textAlign: "center" }}>
-                  ענית נכון על {`${numCorrectAnswers}/${questions.length}`}
-                </h1>
-              </div>
-            )
+              </p>
+              <footer>
+                Date:{" "}
+                {`${new Date().getDate()}-${new Date().getMonth() + 1
+                  }-${new Date().getFullYear()}`}
+              </footer>
+            </div>
           ) : (
-            <div>
+            <div
+              onClick={() => {
+                setCurrentQuestionIndex(0);
+                setNumCorrectAnswers(0);
+              }}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center"
+              }}
+            >
+              <Card
+                image="https://media.tenor.com/8iKMNjcWv08AAAAM/ronaldo-crying.gif"
+                caption="נסה שוב"
+              />
+              <h1 style={{ textAlign: "center" }}>
+                ענית נכון על {`${numCorrectAnswers}/${questions.length}`}
+              </h1>
+            </div>
+          )
+        ) : (
+          <div style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column"
+          }}>
+            <div
+              style={{
+                // display: "flex",
+                justifyItems: "center",
+                textAlign: "center",
+                flexDirection: "column",
+                width: "100%",
+                maxWidth: "70rem"
+              }}
+            >
               <div
-                style={{
-                  display: "flex",
-                  justifyItems: "center",
-                  textAlign: "center",
-                  flexDirection: "column",
-                }}
+                id="blueContainer"
               >
-                <div
-                    id="blueContainer"
-                 
-                >
-                  <span>{`${currentQuestionIndex + 1} / ${
-                    questions.length
+                <span style={{ color: "white" }}>{`${currentQuestionIndex + 1} / ${questions.length
                   }`}</span>
-                  <div style={{ padding: "6px" }}>
-                    <span style={{ color: "white" }}>
-                      {questions[currentQuestionIndex].question.quest}
-                    </span>
-                  </div>
-                  <div>
-                    <img
-                      draggable="false"
-                      id="questionImage"
-                      src={questions[currentQuestionIndex].question.image}
-                    />
-                  </div>
+                <div>
+                  <span style={{ color: "white" }}>
+                    {questions[currentQuestionIndex].question.quest}
+                  </span>
                 </div>
-                {questions[currentQuestionIndex].answers.map((answer) => (
-                  <button
-                    id="answersButton"
-                    onClick={() => {
-                      handleAnswer(answer);
-                      getMessage(answer);
-                    }}
-                    style={{
-                      backgroundColor:
-                        answer.text === selectedAnswer
-                          ? answer.isCorrect
-                            ? "green"
-                            : "red"
-                          : "",
-                    }}
-                    disabled={selectedAnswer.length > 0}
-                  >
-                    {`  ${answer.text} `}
-                  </button>
-                ))}
-                {}
+                <img
+                  draggable="false"
+                  id="questionImage"
+                  src={questions[currentQuestionIndex].question.image}
+                />
               </div>
+              {questions[currentQuestionIndex].answers.map((answer) => (
+                <button
+                  id="answersButton"
+                  onClick={() => {
+                    handleAnswer(answer);
+                    getMessage(answer);
+                  }}
+                  style={{
+                    backgroundColor:
+                      answer.text === selectedAnswer
+                        ? answer.isCorrect
+                          ? "green"
+                          : "red"
+                        : "",
+                  }}
+                  disabled={selectedAnswer.length > 0}
+                >
+                  {`  ${answer.text} `}
+                </button>
+              ))}
+              { }
+            </div>
+            {getMyMessage &&
               <div className={`line ${animate ? "lineUp" : ""}`}>
                 <h5 className="lineUp">{getMyMessage}</h5>
               </div>
-            </div>
-          )}
-        </div>
+            }
+          </div>
+        )}
       </div>
     </div>
   );

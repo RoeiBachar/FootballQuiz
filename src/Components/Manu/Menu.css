@@ -1,0 +1,21 @@
+.Menu {
+  display: flex;
+  background-image: url("https://cdn.dribbble.com/users/384270/screenshots/1503082/pumafc_stadium_02_dribbble.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  background-color: black;
+}
+
+/* Responsive CSS */
