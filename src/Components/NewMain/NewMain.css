@@ -1,14 +1,7 @@
-NewMain {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    direction: rtl;
-}
+NewMain {}
 
 span {
-    font-size: 2.5vh;
+    font-size: 2rem;
     user-select: none
 }
 
@@ -16,8 +9,10 @@ span {
     padding: 44px;
     font-size: 30px;
     background-image: url('https://miro.medium.com/max/1100/1*WwukW_cL3TtVTGcefVpr3w.gif');
-    height: 100vh;
+    min-height: 100%;
+    padding-top: 10rem;
     width: auto;
+
 
 }
 
@@ -26,7 +21,8 @@ button {
     background-color: blue;
     border: 2px solid black;
     padding: 10px 20px;
-    font-size: 27px
+    font-size: 27px;
+
 }
 
 button:hover {
@@ -102,7 +98,7 @@ h5 {
 
 .lineUp {
     animation: 5s anim-lineUp ease-out 1;
-    width:100%;
+    width: 100%;
     font-size: 24px;
 
 }
@@ -145,7 +141,8 @@ h5 {
 #answersButton {
     width: 100%;
 }
-@media only screen and (max-width: 864px) {
+
+@media only screen and (max-width: 900px) {
     .certificate h1 {
         text-align: center;
         font-size: 1px;
@@ -176,24 +173,6 @@ h5 {
         color: #333;
     }
 
-}
-
-@media only screen and (max-width: 700px) {
-    #questionImage {
-        height: 280px;
-        width: 320px;
-    }
-
-    .NewMain {
-        padding: 44px;
-        font-size: 30px;
-        background-image: url('https://miro.medium.com/max/1100/1*WwukW_cL3TtVTGcefVpr3w.gif');
-        height: 220vh;
-        width: 405px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
     #questionImage {
         height: 350px;
         width: 600px;
@@ -203,7 +182,7 @@ h5 {
         padding: 44px;
         font-size: 30px;
         background-image: url('https://miro.medium.com/max/1100/1*WwukW_cL3TtVTGcefVpr3w.gif');
-        height: 220vh;
+        min-height: 60rem;
         width: 100%;
 
     }
@@ -221,11 +200,13 @@ h5 {
         height: 25rem;
         overflow: hidden;
     }
+
     #answersButton {
-       font-size: 25px;
+        font-size: 25px;
     }
+
     .lineUp {
         font-size: 17px;
-        width:100%;
+        width: 100%;
     }
 }

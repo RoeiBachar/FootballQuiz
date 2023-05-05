@@ -15,22 +15,10 @@ function Card(props: CardProps): JSX.Element {
         }}
         id="cardButton"
         style={{
-         
           backgroundImage: `url(${props.image})`,
-         
         }}
       >
-        <span
-          style={{
-            backgroundColor: "black",
-            color: "white",
-            borderRadius: "20%",
-            padding: "8px",
-            fontSize: "6vh",
-          }}
-        >
-          {props.caption}
-        </span>
+        <span>{props.caption}</span>
       </button>
     </div>
   );
