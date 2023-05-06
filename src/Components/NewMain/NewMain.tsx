@@ -105,7 +105,6 @@ function NewMain(): JSX.Element {
           }}>
             <div
               style={{
-                // display: "flex",
                 justifyItems: "center",
                 textAlign: "center",
                 flexDirection: "column",
